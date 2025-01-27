@@ -1,0 +1,39 @@
+A decision tree is a type of supervised learning algorithm that is commonly used in machine learning to model and predict outcomes based on input data. It is a tree-like structure where each internal node represents a decision or test on a specific feature or attribute, each branch represents the outcome of that decision, and each leaf node represents the final decision or prediction.
+
+age	job	marital	education	default	balance	housing	loan	contact	day	month	duration	campaign	pdays	previous	poutcome	deposit
+0	59	0	1	1	0	2343	1	0	2	5	8	1042	1	-1	0	3	1
+1	56	0	1	1	0	45	0	0	2	5	8	1467	1	-1	0	3	1
+2	41	9	1	1	0	1270	1	0	2	5	8	1389	1	-1	0	3	1
+3	55	7	1	1	0	2476	1	0	2	5	8	579	1	-1	0	3	1
+4	54	0	1	2	0	184	0	0	2	5	8	673	2	-1	0	3	1
+
+x=df.iloc[:,:-1]
+y=df['deposit']
+
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import r2_score,accuracy_score,classification_report
+from sklearn import tree
+
+dt=DecisionTreeClassifier()
+
+from sklearn.model_selection import train_test_split
+xtrain,xtest,ytrain,ytest=train_test_split(x,y,test_size=0.2,random_state=1)
+
+dt.fit(xtrain,ytrain)
+ypred=dt.predict(xtest)
+
+
+plt.figure(figsize=(20,20))
+tree.plot_tree(dt,max_depth=3,)
+plt.show()
+
+
+
+
+
+
+
+
+
+
+

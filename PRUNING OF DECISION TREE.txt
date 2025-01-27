@@ -1,0 +1,12 @@
+PRUNING OF DECISION TREE
+IN the decision tree we use to overcome misclassification by using algorithm
+overcome classification means purity of data covering all maximum datapoints.
+due to these tecqnique problem of overfitting is occured and to reduced these overfitting problem 
+we use pruning techqnique.
+
+TYPES OF PRUNINNG TECHNIQUES ARE:
+1)MAX_DEPTH:Control leaves of decision tree helping in solving the problem of overfitting.
+2)Min_sample_leaf:Here to overcome overfitting we reduced leaf of the tree so purity will decrease.
+3)Min_sample_split:Here to overcome overfitting we reduced split of the tree so purity will decrease.
+
+

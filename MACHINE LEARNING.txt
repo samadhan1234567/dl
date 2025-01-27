@@ -1,0 +1,10 @@
+MACHINE LEARNING
+It is a system which learn from historical data buid prediction model and whenever new
+observation is recived by it gives otput from it.
+ex-cars24,hose price,Stock markt,Chat bot.
+
+three types of machine learning
+1)Supervised ML-In this we worked on labeled data.label data means dataset in which input and output is known
+2)Unsupervised ML-Dataset where input is known but output is not known
+3)Reienforcement ML
+
